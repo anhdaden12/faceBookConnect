@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="facebookConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bWI-O3-JZX">
+                                <rect key="frame" x="107" y="94" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EBT-TD-j7V"/>
+                                    <constraint firstAttribute="height" constant="200" id="p8X-vP-xYI"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="z0t-WG-f3L">
+                                <rect key="frame" x="107" y="394" width="200" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23N-CO-Nbv">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZW-0C-22s">
+                                        <rect key="frame" x="82.5" y="0.0" width="117.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="X51-LG-bMQ">
+                                <rect key="frame" x="107" y="324" width="200" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" text="ID :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-FD-oxz">
+                                        <rect key="frame" x="0.0" y="0.0" width="25.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="441-r3-M1t">
+                                        <rect key="frame" x="53.5" y="0.0" width="146.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z0t-WG-f3L" firstAttribute="top" secondItem="X51-LG-bMQ" secondAttribute="bottom" constant="30" id="96O-Oh-a08"/>
+                            <constraint firstItem="X51-LG-bMQ" firstAttribute="height" secondItem="bWI-O3-JZX" secondAttribute="height" multiplier="1/5" id="MeK-e5-KfW"/>
+                            <constraint firstItem="X51-LG-bMQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NRc-Lj-LUN"/>
+                            <constraint firstItem="X51-LG-bMQ" firstAttribute="leading" secondItem="bWI-O3-JZX" secondAttribute="leading" id="QSh-9q-nwM"/>
+                            <constraint firstItem="bWI-O3-JZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QmF-Gz-LMW"/>
+                            <constraint firstItem="z0t-WG-f3L" firstAttribute="leading" secondItem="bWI-O3-JZX" secondAttribute="leading" id="WEj-wC-847"/>
+                            <constraint firstItem="z0t-WG-f3L" firstAttribute="height" secondItem="X51-LG-bMQ" secondAttribute="height" id="f57-m1-DiU"/>
+                            <constraint firstItem="z0t-WG-f3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4U-TJ-l2c"/>
+                            <constraint firstItem="X51-LG-bMQ" firstAttribute="trailing" secondItem="bWI-O3-JZX" secondAttribute="trailing" id="lR4-9Q-0AI"/>
+                            <constraint firstItem="z0t-WG-f3L" firstAttribute="trailing" secondItem="bWI-O3-JZX" secondAttribute="trailing" id="mJl-0N-aHP"/>
+                            <constraint firstItem="X51-LG-bMQ" firstAttribute="top" secondItem="bWI-O3-JZX" secondAttribute="bottom" constant="30" id="scP-Ot-s50"/>
+                            <constraint firstItem="bWI-O3-JZX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ttZ-iZ-RJ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatar" destination="bWI-O3-JZX" id="qaU-cv-lYh"/>
+                        <outlet property="idLabel" destination="441-r3-M1t" id="8oX-cD-nvT"/>
+                        <outlet property="nameLabel" destination="ZZW-0C-22s" id="SCg-HG-HqV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
